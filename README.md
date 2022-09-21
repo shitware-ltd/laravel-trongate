@@ -12,4 +12,4 @@ MIT
 
 ## Issues
 
-There ain't none.
+There ain't none due to our extexensive non test driven development approch. If you dont test, you dont have bugs!
