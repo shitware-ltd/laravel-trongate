@@ -1,0 +1,32 @@
+{
+    "name": "shitware-ltd/laravel-trongate",
+    "description": "A Trongate adapter for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ShitwareLtd\\LaravelTrongate\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mathias Jørgensen",
+            "email": "mathias.jorqensen@gmail.com",
+            "role": "CEO"
+        },
+        {
+            "name": "Arko Elsenaar",
+            "role": "CTO"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^9.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ShitwareLtd\\LaravelTrongate\\TrongateServiceProvider"
+            ]
+        }
+    }
+}
