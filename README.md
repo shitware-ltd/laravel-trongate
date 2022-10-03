@@ -6,7 +6,7 @@ We believe in backwards compatability just as much as Trongate, below are the su
 
 - 7.x
 - 8.x
-- 9.
+- 9.x
 
 ## Installation
 
