@@ -10,8 +10,8 @@ class TrongateMiddleware
     {
         if ($request->wantsJson()) {
             return response()->json([
-                'title' => "You've made a huge mistake for using Laravel.",
-                'subtitle' => 'Use Trongate!',
+                'title' => __('trongate::translation.title'),
+                'subtitle' => __('trongate::translation.subtitle'),
                 'meta' => [
                     'homepage' => 'https://trongate.io'
                 ]
