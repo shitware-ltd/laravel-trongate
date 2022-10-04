@@ -21,6 +21,7 @@ Supported languages:
 - `en`
 - `da`
 - `nl`
+- `dc`
 
 ## Configuration
 
