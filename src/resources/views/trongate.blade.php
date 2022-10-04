@@ -11,7 +11,7 @@
 
     <p>
         You will be redirected in
-        <span _="on load set $timer to {{ config('trongate.countdown') }} repeat {{ config('trongate.countdown') }} times decrement $timer then put it into my innerHTML wait {{ config('trongate.redirect_delay') }}s end then go to url 'https://trongate.io'">
+        <span _="on load set $timer to {{ config('trongate.countdown') }} repeat {{ config('trongate.countdown') }} times decrement $timer then put it into my innerHTML wait 1s end then go to url 'https://trongate.io'">
             {{ config('trongate.countdown') }}
         </span>
         seconds.
