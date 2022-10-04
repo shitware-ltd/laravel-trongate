@@ -22,8 +22,11 @@ class TrongateServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/config/trongate.php' => config_path('trongate.php'),
-                __DIR__.'/lang' => lang_path('vendor/trongate'),
             ]);
+
+            $this->publishes([
+                __DIR__.'/lang' => lang_path('vendor/trongate'),
+            ], 'lang');
         }
     }
 }
