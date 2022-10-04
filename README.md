@@ -14,6 +14,16 @@ We believe in backwards compatability just as much as Trongate, below are the su
 composer require shitware-ltd/laravel-trongate
 ```
 
+## Configuration
+
+We understand that the default countdown of `5` seconds and `1` second delay before redirect might not suit your needs.
+
+To fix this, publish the configuration file and modify just to your needs!
+
+```bash
+php artisan vendor:publish --provider="ShitwareLtd\LaravelTrongate\TrongateServiceProvider" --tag="config"
+```
+
 ## License
 
 MIT
