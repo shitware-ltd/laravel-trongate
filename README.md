@@ -16,7 +16,7 @@ composer require shitware-ltd/laravel-trongate
 
 ## Configuration
 
-We understand that the default countdown of `5` seconds and `1` second delay before redirect might not suit your needs.
+We understand that the default countdown of `5` seconds before redirect might not suit your needs.
 
 To fix this, publish the configuration file and modify just to your needs!
 
