@@ -6,15 +6,10 @@
     <title>Trongate > Laravel</title>
 </head>
 <body style="text-align: center;">
-    <h1>You've made a <u>huge</u> mistake for using Laravel.</h1>
-    <h2>Use Trongate!</h2>
-
+    <h1>{{ __('trongate::translation.title') }}</h1>
+    <h2>{{ __('trongate::translation.subtitle') }}</h2>
     <p>
-        You will be redirected in
-        <span _="on load set $timer to {{ config('trongate.countdown') }} repeat {{ config('trongate.countdown') }} times decrement $timer then put it into my innerHTML wait 1s end then go to url 'https://trongate.io'">
-            {{ config('trongate.countdown') }}
-        </span>
-        seconds.
+        {!! __('trongate::translation.message', ['countdown' => '<span _="on load set $timer to '.config('trongate.countdown').' repeat '.config('trongate.countdown').' times decrement $timer then put it into my innerHTML wait 1s end then go to url \'https://trongate.io\'">'.config('trongate.countdown').'</span>']) !!}
     </p>
 </body>
 </html>

@@ -16,12 +16,14 @@ class TrongateServiceProvider extends ServiceProvider
     public function boot(Kernel $kernel)
     {
         $this->loadViewsFrom(__DIR__.'/resources/views', 'trongate');
+        $this->loadTranslationsFrom(__DIR__.'/lang/', 'trongate');
         $kernel->pushMiddleware(TrongateMiddleware::class);
 
         if ($this->app->runningInConsole()) {
             $this->publishes([
                 __DIR__.'/config/trongate.php' => config_path('trongate.php'),
-            ], 'config');
+                __DIR__.'/lang' => lang_path('vendor/trongate'),
+            ]);
         }
     }
 }
