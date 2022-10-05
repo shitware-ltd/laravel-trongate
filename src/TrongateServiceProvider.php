@@ -10,7 +10,7 @@ class TrongateServiceProvider extends ServiceProvider
 {
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__.'./config/trongate.php', 'trongate');
+        $this->mergeConfigFrom(__DIR__.'/config/trongate.php', 'trongate');
     }
 
     public function boot(Kernel $kernel)
